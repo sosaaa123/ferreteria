@@ -218,7 +218,7 @@ class productos:
         for item in respuesta1:
             suma1 = suma1 + item[0]
 
-        return suma*suma1
+        return (suma*suma1)/2
 
     
         
