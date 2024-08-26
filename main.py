@@ -13,6 +13,7 @@ proveedorTable = proveedor()
 productosTable = productos()
 ventasTable = ventas()
 
+
 opcion = True
 while opcion:
     print("- Las tablas disponibles a consultar son:\n1)Para tabla Proveedores\n2)Para tabla productos\n3)Para tabla ventas\n4)Para salir")
@@ -98,7 +99,7 @@ while opcion:
 
             elif opcion1 == "4":
                 print("-Vamos a modificar un registro de la tabla productos")
-                value = input("porfavor ingrese el id del registro del producto a modificar: ")
+                value = int(input("porfavor ingrese el id del registro del producto a modificar: "))
                 productosTable.modificarRegistro(value)
 
 

@@ -122,7 +122,7 @@ class productos:
 
                 elif opcion == "4":
                     nuevoValor = input("Vamos a modificar el numero de stock, porfavor ingrese el nuevo numero: ")
-                    cursor.execute("UPDATE productos SET marca = ? WHERE id_producto = ?", (nuevoValor, id_producto))
+                    cursor.execute("UPDATE productos SET stock = ? WHERE id_producto = ?", (nuevoValor, id_producto))
                     conexion.commit()
                     self.ver_por_id(id_producto)
                     print("Numero de stock modificado con exito")
